@@ -1,0 +1,6 @@
+mlx-vlm>=0.6.0           # qwen needs numpy>=2.0
+datasets>=2.19.0        # download ScreenSpot from hf
+pillow>=10.0.0          # image treatment
+rapidocr-onnxruntime>=1.3.0   # OCR 
+numpy>=2.0               
+matplotlib>=3.7.0       
