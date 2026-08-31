@@ -96,7 +96,7 @@ def _filter_survival_analysis(rows):
 
     labels = [f"survived=0\n(n={len(groups[0])})", f"survived=1\n(n={len(groups[1])})"]
     vals = [accs[0], accs[1]]
-    fig, ax = plt.subplots(figsize=(4, 3.2))
+    fig, ax = plt.subplots(figsize=(7, 6))
     ax.bar(labels, vals, color=["saddlebrown","darkgreen"])
     ax.set_ylabel("accuracy")
     ax.set_ylim(0, 1)

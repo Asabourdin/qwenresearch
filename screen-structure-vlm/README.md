@@ -45,7 +45,7 @@ cell                n     acc    text    icon  lat(s)  ocr(s)  pfail
 3. **The gap to the 7B model is not closed.** 
    3B+structure (0.296) is far below 7B+plain (0.846); even 3B+filtered (0.675) doesn't reach it. The original hypothesis — "structure substitutes for scale" — is not supported for this model pair, at least not for the *full* structure condition. Even if it is better than the full structure, even the filtered one doesn't provide the expected progress.
 
-4. **The 7B model is essentially unaffected by structure, and even benefits slightly.** 
+4. **The 7B model benefits slightly from structure.** 
    This is a very interesting detected trend that would need future investigation.
    We see 7B/plain (0.846) → 7B/structure (0.858) → 7B/filtered (0.867): a small monotonic improvement. 
    We can suppose that a model large enough to not get distracted by a long OCR list could make some use of it. This would mean that the *harm* from structure in this study is specific to the smaller model, not a property of adding OCR text in general.
